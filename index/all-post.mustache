@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Blog Posts</title>
+  </head>
+  <body>
+    <h1> Blog Posts ....Lets Read</h1>
+
+    <div>
+      <a href="/input-post">Add New Post</a>
+    </div>
+
+    <ul>
+      {{#posts}}
+      <li>
+        <label>{{category}}</label>
+      </br>
+        <label>{{title}}</label>
+      </br>
+        <p>{{body}}</p>
+      </br>
+        <label>{{date}}</label>
+      <form action="/delete-post" method="POST">
+        <input type="hidden" name="postid" value="{{postid}}" />
+        <input type="submit" value="Remove" />
+      </form>
+    </li>
+      {{/posts}}
+    </ul>
+
+
+  </body>
+</html>

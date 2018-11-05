@@ -1,0 +1,20 @@
+{
+  "name": "blogapppostgreaql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arlisha Hayles",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dependencies": "0.0.1",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "mustache-express": "^1.2.8",
+    "pg-promise": "^8.5.1",
+    "save": "^2.3.2"
+  }
+}
