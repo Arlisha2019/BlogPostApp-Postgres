@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/styles.css"></link>
     <title>Blog Posts</title>
   </head>
   <body>
@@ -13,19 +14,21 @@
 
     <ul>
       {{#posts}}
+    
       <li>
-        <label>{{category}}</label>
+      Category: <label>{{category}}</label>
       </br>
-        <label>{{title}}</label>
+
+      Title:  <label>{{title}}</label>
       </br>
-        <p>{{body}}</p>
-      </br>
-        <label>{{date}}</label>
+      <p>{{body}}</p>
+      Date Posted:  <label>{{date}}</label>
       <form action="/delete-post" method="POST">
         <input type="hidden" name="postid" value="{{postid}}" />
         <input type="submit" value="Remove" />
       </form>
     </li>
+
       {{/posts}}
     </ul>
 

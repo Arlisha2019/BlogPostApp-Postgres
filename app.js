@@ -12,6 +12,8 @@ function dateTimeNow() {
  return dateTime
 }
 
+app.use(express.static('css'))
+
 app.use(bodyParser.urlencoded({ extended: false }))
 
 const connectionString = "postgres://localhost:5432/blogapp"

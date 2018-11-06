@@ -1,0 +1,35 @@
+ul {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#lists {
+  list-style: none;
+
+}
+
+h1 {
+  text-align: -webkit-center;
+}
+
+#container {
+  text-align: -webkit-center;
+}
+
+select {
+  margin-right: 500px;
+
+}
+
+input {
+  margin-right: 490px;
+}
